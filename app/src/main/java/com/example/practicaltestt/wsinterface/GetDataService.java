@@ -6,6 +6,6 @@ import retrofit2.http.GET;
 
 public interface GetDataService {
 
-    @GET("/api/users?offset=10&limit=10")
+    @GET("/api/users?offset=10&limit=100")
     Call<ResponseBody> getUserInfoList();
 }
