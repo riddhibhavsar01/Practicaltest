@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/row_userlist_adapter_iv_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#000"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/row_userlist_adapter_tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="test test"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        />
+
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/row_userlist_adapter_rv_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
